@@ -1,0 +1,13 @@
+.title{
+  text-align: center;
+  margin: 130px auto 0;
+}
+.action{
+  text-align: right;
+}
+.container{
+  max-width: 800px !important
+}
+.table .thead-dark th{
+  border: none !important;
+}
