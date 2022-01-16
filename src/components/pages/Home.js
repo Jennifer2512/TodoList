@@ -26,7 +26,7 @@ const Home = () => {
         New task
       </Link>
       <div className="py-4">
-        <table class="table border shadow">
+        <table class="table shadow">
           <thead class="thead-dark">
             <tr>
               <th scope="col">#</th>
@@ -42,10 +42,7 @@ const Home = () => {
                 <th scope="row">{index + 1}</th>
                 <td>{task.title}</td>
                 <td className="action">
-                  <Link
-                    class="btn btn-primary mr-2 "
-                    to={`/edit/${task.id}`}
-                  >
+                  <Link class="btn btn-primary mr-2 " to={`/edit/${task.id}`}>
                     Edit
                   </Link>
                   <Link
