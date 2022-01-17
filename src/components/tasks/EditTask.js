@@ -14,6 +14,7 @@ const EditTask = () => {
     setTask({ ...task, [e.target.title]: e.target.value });
   };
 
+  // Chỉ gọi 1 lần khi render components thì set tham số 2 là []
   useEffect(() => {
     loadTask();
   }, []);
@@ -43,7 +44,7 @@ const EditTask = () => {
               onChange={(e) => onInputChange(e)}
             />
           </div>
-          <button className="btn btn-primary btn-block">Update</button>
+          <button className="btn btn-primary btn-block">Save</button>
           <Link className="btn btn-dark btn-block" to="/">
             Back to Home
           </Link>

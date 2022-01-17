@@ -18,6 +18,7 @@ const AddTask = () => {
     await axios.post("http://localhost:3000/tasks", task);
     history.push("/");
   };
+  
   return (
     <div className="container title">
       <div className="w-75 mx-auto shadow p-5">
